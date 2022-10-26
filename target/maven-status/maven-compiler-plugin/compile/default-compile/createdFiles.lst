@@ -1,0 +1,6 @@
+org/example/pages/HomePage.class
+org/example/utils/ConfigProvider.class
+org/example/pages/DocsPage.class
+org/example/driver/DriverManager.class
+org/example/pages/BasePage.class
+org/example/hooks/DriverHooks.class

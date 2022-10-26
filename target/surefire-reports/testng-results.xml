@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-26T22:42:41 GMT+03:00" name="Cucumber tests" finished-at="2022-10-26T22:43:01 GMT+03:00" duration-ms="19480">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.runner.CucumberTest@22635ba0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-10-26T22:42:41 GMT+03:00" name="All Tests" finished-at="2022-10-26T22:43:01 GMT+03:00" duration-ms="19480">
+      <class name="org.example.runner.CucumberTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.example.runner.CucumberTest@22635ba0]" started-at="2022-10-26T22:42:41 GMT+03:00" name="setUpClass" finished-at="2022-10-26T22:42:42 GMT+03:00" duration-ms="207" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@10993713]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.runner.CucumberTest@22635ba0]" started-at="2022-10-26T22:42:42 GMT+03:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-26T22:42:59 GMT+03:00" duration-ms="17594" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Docs sections should contains appropriate columns"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["As a user I want to get ability to user Docs pages"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.runner.CucumberTest@22635ba0]" started-at="2022-10-26T22:42:42 GMT+03:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-26T22:42:59 GMT+03:00" duration-ms="17621" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Docs sections should contains appropriate columns"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["As a user I want to get ability to use menu sections"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.runner.CucumberTest@22635ba0]" started-at="2022-10-26T22:42:42 GMT+03:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-26T22:43:01 GMT+03:00" duration-ms="19191" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Docs sections should contains appropriate columns"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["As a user I want to get ability to use menu sections"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(@class, 'dropdown')]//*[contains(@class, 'item')][contains(text(), 'Guides')]"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'admins-MacBook-Pro.local', ip: 'fe80:0:0:0:488:16ae:20a9:8b99%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [30275f093b50102dcaef4442dc6cba96, findElement {using=xpath, value=//*[contains(@class, 'dropdown')]//*[contains(@class, 'item')][contains(text(), 'Guides')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/br/rrn5t_652kx...}, goog:chromeOptions: {debuggerAddress: localhost:60575}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60575/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 30275f093b50102dcaef4442dc6cba96]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(@class, 'dropdown')]//*[contains(@class, 'item')][contains(text(), 'Guides')]"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'admins-MacBook-Pro.local', ip: 'fe80:0:0:0:488:16ae:20a9:8b99%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [30275f093b50102dcaef4442dc6cba96, findElement {using=xpath, value=//*[contains(@class, 'dropdown')]//*[contains(@class, 'item')][contains(text(), 'Guides')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/br/rrn5t_652kx...}, goog:chromeOptions: {debuggerAddress: localhost:60575}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60575/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 30275f093b50102dcaef4442dc6cba96
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.example.pages.BasePage.findElement(BasePage.java:16)
+at org.example.pages.HomePage.menuChildItem(HomePage.java:23)
+at org.example.steps.MenuSectionsSteps.clicksOnItem(MenuSectionsSteps.java:29)
+at ✽.the user clicks on the "Guides" item(classpath:features/MenuSection.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.runner.CucumberTest@22635ba0]" started-at="2022-10-26T22:42:42 GMT+03:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-26T22:42:59 GMT+03:00" duration-ms="17586" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Docs sections should contains appropriate columns"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["As a user I want to get ability to use menu sections"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.runner.CucumberTest@22635ba0]" started-at="2022-10-26T22:42:42 GMT+03:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-26T22:43:01 GMT+03:00" duration-ms="19199" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Docs sections should contains appropriate columns"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["As a user I want to get ability to use menu sections"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(@class, 'dropdown')]//*[contains(@class, 'item')][contains(text(), '10 Minute Tutorial')]"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'admins-MacBook-Pro.local', ip: 'fe80:0:0:0:488:16ae:20a9:8b99%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [30d25a1e032e14d4936be550b95dadba, findElement {using=xpath, value=//*[contains(@class, 'dropdown')]//*[contains(@class, 'item')][contains(text(), '10 Minute Tutorial')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/br/rrn5t_652kx...}, goog:chromeOptions: {debuggerAddress: localhost:60567}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60567/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 30d25a1e032e14d4936be550b95dadba]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(@class, 'dropdown')]//*[contains(@class, 'item')][contains(text(), '10 Minute Tutorial')]"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'admins-MacBook-Pro.local', ip: 'fe80:0:0:0:488:16ae:20a9:8b99%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [30d25a1e032e14d4936be550b95dadba, findElement {using=xpath, value=//*[contains(@class, 'dropdown')]//*[contains(@class, 'item')][contains(text(), '10 Minute Tutorial')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/br/rrn5t_652kx...}, goog:chromeOptions: {debuggerAddress: localhost:60567}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60567/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 30d25a1e032e14d4936be550b95dadba
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.example.pages.BasePage.findElement(BasePage.java:16)
+at org.example.pages.HomePage.menuChildItem(HomePage.java:23)
+at org.example.steps.MenuSectionsSteps.clicksOnItem(MenuSectionsSteps.java:29)
+at ✽.the user clicks on the "10 Minute Tutorial" item(classpath:features/MenuSection.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.example.runner.CucumberTest@22635ba0]" started-at="2022-10-26T22:43:01 GMT+03:00" name="tearDownClass" finished-at="2022-10-26T22:43:01 GMT+03:00" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- org.example.runner.CucumberTest -->
+    </test> <!-- All Tests -->
+  </suite> <!-- Cucumber tests -->
+</testng-results>
