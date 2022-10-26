@@ -15,16 +15,16 @@ public class DocsSteps {
 
     @Then("there are {int} items in the left-side menu")
     public void thereAreItemsInTheLeftSideMenu(int expectedSize) {
-       assertThat(docsPage.getMenuItemTitles())
-               .as("The size is not correct")
-               .hasSize(expectedSize);
+        assertThat(docsPage.getMenuItemTitles())
+                .as("The size is not correct")
+                .hasSize(expectedSize);
     }
 
     @Then("left-side menu contains the following links")
     public void leftSideMenuContainsTheFollowingLinks(List<String> expectedTitles) {
-assertThat(docsPage.getMenuItemTitles())
-        .extracting(WebElement::getText)
-        .as("Some items of menu are not as expected")
-        .containsAll(expectedTitles);
+        assertThat(docsPage.getMenuItemTitles())
+                .extracting(WebElement::getText)
+                .as("Some items of menu are not as expected")
+                .containsAll(expectedTitles);
     }
 }
